@@ -1,0 +1,198 @@
+{
+    "hero": {
+      "subtitle": "Let's Make The Best Investment",
+      "title": "Read More And Make Success The Result Of Perfection.",
+      "text": "Unlock the potential of your mind with every page you turn. Embrace knowledge, empower yourself, and watch as your ambitions transform into achievements.",
+      "image": "./assets/images/hero-banner.png",
+      "imageAlt": "things I never said, a novel by Claudia Wilson"
+    },
+
+    "author": {
+      "name": "Martin Jenny",
+      "style": "Art, Fiction",
+      "description": "Martin Jenny is a renowned author known for his compelling storytelling and vivid imagination. His works span across art and fiction, captivating readers with rich narratives and profound insights. With a career spanning over two decades, Martin has penned numerous bestsellers, each reflecting his unique style and deep understanding of human emotions.",
+      "image": "./assets/images/author-banner.png"
+    },
+
+    "benefits": [
+      {
+        "icon": "./assets/images/benefits-1.svg",
+        "title": "Experience",
+        "text": "Gain firsthand insights and practical knowledge that bridge theory and real-world application.",
+        "linkText": "Read more"
+      },
+      {
+        "icon": "./assets/images/benefits-2.svg",
+        "title": "Motivation",
+        "text": "Ignite your passion and drive with inspiring stories and motivational strategies.",
+        "linkText": "Read more"
+      },
+      {
+        "icon": "./assets/images/benefits-3.svg",
+        "title": "Goals",
+        "text": "Learn how to set, pursue, and achieve your goals with proven techniques and tools.",
+        "linkText": "Read more"
+      },
+      {
+        "icon": "./assets/images/benefits-4.svg",
+        "title": "Vision",
+        "text": "Cultivate a clear and compelling vision for your future and learn how to turn it into reality.",
+        "linkText": "Read more"
+      },
+      {
+        "icon": "./assets/images/benefits-5.svg",
+        "title": "Mission",
+        "text": "Define your mission with clarity and purpose, guiding your actions towards meaningful impact.",
+        "linkText": "Read more"
+      },
+      {
+        "icon": "./assets/images/benefits-6.svg",
+        "title": "Strategy",
+        "text": "Develop effective strategies to overcome challenges and reach your objectives efficiently.",
+        "linkText": "Read more"
+      }
+    ],
+
+        "chapters": [
+          {
+            "number": "chapter 01",
+            "title": "Getting started",
+            "description": "Discover the basics and set the foundation for your journey towards mastery in this introductory chapter."
+          },
+          {
+            "number": "chapter 02",
+            "title": "The language of gossip box",
+            "description": "Uncover the nuances of communication and learn how to navigate social dynamics effectively."
+          },
+          {
+            "number": "chapter 03",
+            "title": "The rise of trend Design",
+            "description": "Explore the evolution of design trends and understand their impact on contemporary aesthetics."
+          },
+          {
+            "number": "chapter 04",
+            "title": "Deep dive into trends",
+            "description": "Delve deeper into the world of design trends, examining the factors driving their popularity."
+          },
+          {
+            "number": "chapter 05",
+            "title": "Analyzing trend design",
+            "description": "Analyze the key elements of trend design and how they influence our visual culture."
+          },
+          {
+            "number": "chapter 06",
+            "title": "Future of trend design",
+            "description": "Gain insights into the future of design trends and what to expect in the coming years."
+          },
+          {
+            "number": "chapter 07",
+            "title": "Case studies in trend design",
+            "description": "Examine case studies of successful trend designs and the principles behind their success."
+          },
+          {
+            "number": "chapter 08",
+            "title": "Non-technical literature",
+            "description": "Broaden your horizons with engaging content that explores diverse subjects beyond technical scope."
+          },
+          {
+            "number": "chapter 09",
+            "title": "Where is the author?",
+            "description": "Dive into the life and thoughts of the author, understanding the inspirations behind the work."
+          }
+        ],
+
+        
+        "pricing": [
+              {
+                "title": "E-Book",
+                "price": "100000",
+                "currency": "Rp",
+                "features": [
+                  "Complete Book",
+                  "PDF and EPUB",
+                  "No Physical Copy",
+                  "Access to Downloads"
+                ],
+                "buttonText": "BUY NOW",
+                "buttonClass": "btn-secondary",
+                "link": "purchase.html"
+              },
+              {
+                "title": "Bundle",
+                "price": "225000",
+                "currency": "Rp",
+                "features": [
+                  "Complete Book",
+                  "PDF and EPUB",
+                  "Hardcover Book",
+                  "Access to Downloads"
+                ],
+                "buttonText": "BUY NOW",
+                "buttonClass": "btn-primary",
+                "link": "purchase.html"
+              },
+              {
+                "title": "Hardcover",
+                "price": "150000",
+                "currency": "Rp",
+                "features": [
+                  "Complete Book",
+                  "PDF and EPUB",
+                  "Hardcover Book",
+                  "No Instant Download"
+                ],
+                "buttonText": "BUY NOW",
+                "buttonClass": "btn-secondary",
+                "link": "purchase.html"
+              }
+            ],
+
+    "achievements": [
+        {
+        "title": "Nominated",
+        "description": "Nominated for the International Booker Prize, honoring exceptional works of fiction from around the world.",
+        "image": "./assets/images/achievement-1.jpg",
+        "awardImage": "./assets/images/award.svg",
+        "alt": "Nominated"
+        },
+        {
+        "title": "Winner",
+        "description": "Awarded the Man Booker Prize for Fiction, celebrating outstanding literary excellence and creativity.",
+        "image": "./assets/images/achievement-2.jpg",
+        "awardImage": "./assets/images/award.svg",
+        "alt": "Winner"
+        },
+        {
+        "title": "Guest of Honor",
+        "description": "Honored as Guest of Honor at the World Literary Festival, recognizing significant contributions to literature.",
+        "image": "./assets/images/achievement-3.jpg",
+        "awardImage": "./assets/images/award.svg",
+        "alt": "Guest of Honor"
+        },
+        {
+        "title": "Finalist",
+        "description": "Finalist for the National Book Award, celebrating excellence in American literature and storytelling.",
+        "image": "./assets/images/achievement-4.jpg",
+        "awardImage": "./assets/images/award.svg",
+        "alt": "Finalist"
+        },
+        {
+        "title": "Winner",
+        "description": "Winner of the Edgar Award for Best Novel, highlighting excellence in the mystery and thriller genres.",
+        "image": "./assets/images/achievement-5.jpg",
+        "awardImage": "./assets/images/award.svg",
+        "alt": "Winner"
+        },
+        {
+        "title": "Nominated",
+        "description": "Nominated for the Hugo Award for Best Novel, recognizing outstanding achievements in sci-fi.",
+        "image": "./assets/images/achievement-1.jpg",
+        "awardImage": "./assets/images/award.svg",
+        "alt": "Nominated"
+        }
+    ]
+    
+
+
+  }
+  
