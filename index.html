@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+
+    <!-- 
+    - primary meta tags
+    -->
+    <title>Bookish - Read More And Make Success</title>
+    <meta name="title" content="Bookish - Read More And Make Success">
+    <meta name="description" content="Read More And Make Success The Result Of Perfection. - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad harum quibusdam, assumenda quia explicabo.">
+
+    <!--
+    - favicon
+    -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+    <!--
+    -custom css link
+    -->
+ 
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+
+
+    <!--
+    - google font link
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Poppins:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!--
+    - pre load image
+    -->
+
+    <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+
+</head>
+<body>
+
+    <!--
+    - HEADER
+    -->
+
+    <header class="header" data-header>
+        <div class="container">
+    
+          <a href="#" class="logo">Bookish</a>
+    
+          <nav class="navbar" data-navbar>
+            <ul class="navbar-list">
+    
+              <li class="navbar-item">
+                <a href="#home" class="navbar-link" data-nav-link>Home</a>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="#benefits" class="navbar-link" data-nav-link>Benefits</a>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="#chapters" class="navbar-link" data-nav-link>Chapters</a>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="#pricing" class="navbar-link" data-nav-link>Pricing</a>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="#author" class="navbar-link" data-nav-link>Author</a>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="#achievements" class="navbar-link" data-nav-link>Achievements</a>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+              </li>
+
+                </ul>
+            </nav>
+
+            <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+                <ion-icon name="menu-outline" aria-hidden="true" class="open"></ion-icon>
+
+                <ion-icon name="close-outline" aria-hidden="true" class="close"></ion-icon>
+            </button>
+
+        </div>
+    </header>
+
+
+
+<main>
+    <article>
+        
+ 
+    <!--
+    - #HER0
+    -->
+    <section class="section hero" id="home" aria-label="home">
+      <div class="container">
+    
+        <div class="hero-content">
+    
+          <p class="section-subtitle" id="hero-subtitle"></p>
+    
+          <h1 class="h1 hero-title" id="hero-title"></h1>
+    
+          <p class="section-text" id="hero-text"></p>
+    
+        </div>
+    
+        <div class="hero-banner has-before">
+    
+          <img id="hero-image" src="" width="431" height="596" alt="" class="w-100">
+    
+          <button class="play-btn has before" aria-label="play video">
+            <ion-icon name="play-outline" aria-hidden="true"></ion-icon>
+          </button>
+    
+        </div>
+    
+      </div>
+    </section>
+    
+
+
+    <!--
+    -#BENEFITS
+    -->
+    <section class="section benefits" id="benefits" aria-label="benefits">
+      <div class="container">
+
+        <div class="grid-list" id="benefits-list">
+          <li class="benefits-content">
+            <h2 class="h2 section-title">What you'll achieve by this book</h2>
+            <p class="section-text">Unveil the endless possibilities and elevate your potential with every chapter.</p>
+          </li>
+        </div>
+
+      </div>
+    </section>
+    
+
+
+
+    <!--
+    -#CHAPTERS
+    -->
+    <section class="section chapters" id="chapters">
+        <div class="container">
+
+            <p class="section-subtitle">Chapters</p>
+
+            <h2 class="h2 section-title has-underline">
+                Chapters we've covered
+                <span class="span has-before"></span>
+            </h2>
+
+            <ul class="grid-list" id="chapter-list">
+                <!-- Chapters will be inserted here dynamically -->
+            </ul>
+
+        </div>
+    </section>
+
+
+
+
+    <!--
+    -#PREVIEW
+    -->
+    <section class="section preview" aria-label="preview">
+        <div class="container">
+
+          <p class="section-subtitle">Chapter Preview</p>
+
+          <h2 class="h2 section-title has-underline">
+            Read some chapter free
+            <span class="span has-before"></span>
+          </h2>
+
+          <ul class="tab-list">
+
+            <li>
+              <div class="tab-card active" data-tab-card>
+                <h3 class="h3 tab-text">Chapter 1</h3>
+
+                <img src="./assets/images/preview-1.png" width="820" height="630" loading="lazy" alt="Chapter 1"
+                  class="w-100">
+              </div>
+            </li>
+
+            <li>
+              <div class="tab-card " data-tab-card>
+                <h3 class="h3 tab-text">Chapter 2</h3>
+
+                <img src="./assets/images/preview-2.png" width="820" height="630" loading="lazy" alt="Chapter 2"
+                  class="w-100">
+              </div>
+            </li>
+
+            <li>
+              <div class="tab-card " data-tab-card>
+                <h3 class="h3 tab-text">Chapter 3</h3>
+
+                <img src="./assets/images/preview-3.png" width="820" height="630" loading="lazy" alt="Chapter 3"
+                  class="w-100">
+              </div>
+            </li>
+
+            <li>
+              <div class="tab-card " data-tab-card>
+                <h3 class="h3 tab-text">Chapter 4</h3>
+
+                <img src="./assets/images/preview-4.png" width="820" height="630" loading="lazy" alt="Chapter 4"
+                  class="w-100">
+              </div>
+            </li>
+
+            <li>
+              <div class="tab-card " data-tab-card>
+                <h3 class="h3 tab-text">Chapter 5</h3>
+
+                <img src="./assets/images/preview-5.png" width="820" height="630" loading="lazy" alt="Chapter 5"
+                  class="w-100">
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+      <!--
+    -#PRICING
+    -->
+
+    <section class="section pricing" id="pricing" aria-label="pricing">
+      <div class="container">
+  
+          <p class="section-subtitle">Pricing</p>
+  
+          <h2 class="h2 section-title has-underline">
+              Pricing based on their version
+              <span class="span has-before"></span>
+          </h2>
+  
+          <ul class="grid-list" id="pricing-list">
+              <!-- Pricing cards will be inserted here dynamically -->
+          </ul>
+  
+      </div>
+  </section>
+  
+
+    <!--
+    -# AUTHOR
+    -->
+
+    <section class="section author" id="author">
+      <div class="container">
+
+        <figure class="author-banner img-holder" style="--width: 700; --height: 720;">
+          <img id="author-image" src="" width="700" height="720" loading="lazy" alt="Author Image" class="img-cover">
+        </figure>
+        
+        <div class="author-content">
+          <p class="section-subtitle">The Author</p>
+          <h2 id="author-name" class="h2 section-title"></h2>
+          <p id="author-style" class="author-name"></p>
+          <div id="author-description" class="section-text"></div>
+        </div>
+
+      </div>
+    </section>
+
+    
+    <!-- 
+    - #ACHIEVMENT
+    -->
+
+    <section class="section achievement" id="achievements" aria-label="achievement">
+        <div class="container">
+    
+            <p class="section-subtitle">Achievements</p>
+    
+            <h2 class="h2 section-title has-underline">
+                Honor & Awards Achieved
+                <span class="span has-before"></span>
+            </h2>
+    
+            <ul class="grid-list">
+    
+                <li>
+                    <div class="achievement-card">
+                        <figure class="card-banner img-holder" style="--width: 450; --height: 300;">
+                            <img src="./assets/images/achievement-1.jpg" width="450" height="300" loading="lazy" alt="Nominated" class="img-cover">
+                        </figure>
+                        <div class="card-content">
+                            <img src="./assets/images/award.svg" width="80" height="80" loading="lazy" alt="trophy" class="abs-img">
+                            <h3 class="h3 card-title">Nominated</h3>
+                            <p class="card-text">
+                                Nominated for the International Booker Prize, honoring exceptional works of fiction from around the world.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+    
+                <li>
+                    <div class="achievement-card">
+                        <figure class="card-banner img-holder" style="--width: 450; --height: 300;">
+                            <img src="./assets/images/achievement-2.jpg" width="450" height="300" loading="lazy" alt="Winner" class="img-cover">
+                        </figure>
+                        <div class="card-content">
+                            <img src="./assets/images/award.svg" width="80" height="80" loading="lazy" alt="trophy" class="abs-img">
+                            <h3 class="h3 card-title">Winner</h3>
+                            <p class="card-text">
+                                Awarded the Man Booker Prize for Fiction, celebrating outstanding literary excellence and creativity.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+    
+                <li>
+                    <div class="achievement-card">
+                        <figure class="card-banner img-holder" style="--width: 450; --height: 300;">
+                            <img src="./assets/images/achievement-3.jpg" width="450" height="300" loading="lazy" alt="Guest of Honor" class="img-cover">
+                        </figure>
+                        <div class="card-content">
+                            <img src="./assets/images/award.svg" width="80" height="80" loading="lazy" alt="trophy" class="abs-img">
+                            <h3 class="h3 card-title">Guest of Honor</h3>
+                            <p class="card-text">
+                                Honored as Guest of Honor at the World Literary Festival, recognizing significant contributions to literature.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+    
+                <li>
+                    <div class="achievement-card">
+                        <figure class="card-banner img-holder" style="--width: 450; --height: 300;">
+                            <img src="./assets/images/achievement-4.jpg" width="450" height="300" loading="lazy" alt="Finalist" class="img-cover">
+                        </figure>
+                        <div class="card-content">
+                            <img src="./assets/images/award.svg" width="80" height="80" loading="lazy" alt="trophy" class="abs-img">
+                            <h3 class="h3 card-title">Finalist</h3>
+                            <p class="card-text">
+                                Finalist for the National Book Award, celebrating excellence in American literature and storytelling.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+    
+                <li>
+                    <div class="achievement-card">
+                        <figure class="card-banner img-holder" style="--width: 450; --height: 300;">
+                            <img src="./assets/images/achievement-5.jpg" width="450" height="300" loading="lazy" alt="Winner" class="img-cover">
+                        </figure>
+                        <div class="card-content">
+                            <img src="./assets/images/award.svg" width="80" height="80" loading="lazy" alt="trophy" class="abs-img">
+                            <h3 class="h3 card-title">Winner</h3>
+                            <p class="card-text">
+                                Winner of the Edgar Award for Best Novel, highlighting excellence in the mystery and thriller genres.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+    
+                <li>
+                    <div class="achievement-card">
+                        <figure class="card-banner img-holder" style="--width: 450; --height: 300;">
+                            <img src="./assets/images/achievement-1.jpg" width="450" height="300" loading="lazy" alt="Nominated" class="img-cover">
+                        </figure>
+                        <div class="card-content">
+                            <img src="./assets/images/award.svg" width="80" height="80" loading="lazy" alt="trophy" class="abs-img">
+                            <h3 class="h3 card-title">Nominated</h3>
+                            <p class="card-text">
+                                Nominated for the Hugo Award for Best Novel, recognizing outstanding achievements in sci-fi.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+    
+            </ul>
+    
+        </div>
+    </section>
+    
+
+
+
+    <!-- 
+    - #CONTACT
+    -->
+
+    <section class="section contact" id="contact" aria-label="contact">
+  <div class="container">
+
+    <p class="section-subtitle">Contact</p>
+
+    <h2 class="h2 section-title has-underline">
+      Write me anything
+      <span class="span has-before"></span>
+    </h2>
+
+    <div class="wrapper">
+
+      <form id="contact-form" action="" class="contact-form">
+
+        <input type="text" id="name" name="name" placeholder="Your Name" required class="input-field">
+        <span id="name-error" class="error-message"></span>
+
+        <input type="email" id="email" name="email_address" placeholder="Your Email" required class="input-field">
+        <span id="email-error" class="error-message"></span>
+
+        <input type="text" id="subject" name="subject" placeholder="Subject" required class="input-field">
+        <span id="subject-error" class="error-message"></span>
+
+        <textarea id="message" name="message" placeholder="Your Message" required class="input-field"></textarea>
+        <span id="message-error" class="error-message"></span>
+
+        <button type="submit" id="send-button" class="btn btn-primary">Send Now</button>
+
+      </form>
+
+            <ul class="contact-card">
+
+                <li>
+                  <p class="card-title">Address:</p>
+  
+                  <address class="address">
+                    10, Pajajaran <br>
+                    Bogor, Indonesia
+                  </address>
+                </li>
+  
+                <li>
+                  <p class="card-title">Phone:</p>
+  
+                  <a href="tel:1234567890" class="card-link">+62 812-9030-7901</a>
+                </li>
+  
+                <li>
+                  <p class="card-title">Email:</p>
+  
+                  <a href="mailto:support@support.com" class="card-link">support@support.com</a>
+                </li>
+  
+                <li>
+                  <p class="social-list-title h3">Connect book socials</p>
+  
+                  <ul class="social-list">
+  
+                    <li>
+                      <a href="#" class="social-link">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                      </a>
+                    </li>
+  
+                    <li>
+                      <a href="#" class="social-link">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                      </a>
+                    </li>
+  
+                    <li>
+                      <a href="#" class="social-link">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                      </a>
+                    </li>
+  
+                    <li>
+                      <a href="#" class="social-link">
+                        <ion-icon name="logo-youtube"></ion-icon>
+                      </a>
+                    </li>
+  
+                    <li>
+                      <a href="#" class="social-link">
+                        <ion-icon name="logo-whatsapp"></ion-icon>
+                      </a>
+                    </li>
+  
+                  </ul>
+                </li>
+  
+              </ul>
+  
+            </div>
+  
+          </div>
+        </section>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    </article>
+</main>
+
+<!-- 
+- #FOOTER
+-->
+
+<footer class="footer">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <a href="#" class="logo">Bookish</a>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="#" class="footer-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Benefits</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Chapters</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Pricing</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Author</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Achievement</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Reviews</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; 2024 All right reserved. Made by Group 10 4SE3.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+
+    <!--
+    - custom js link
+    -->
+    <script src="./assets/js/script.js" defer></script>
+
+    <!--
+    - ionicon link
+    -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>

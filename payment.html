@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookish - Credit Card Payment</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true">
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --white: #fff;
+            --seashell: hsl(20, 43%, 93%);
+            --old-rose: hsl(357, 37%, 62%);
+            --chinese-violet: hsl(304, 14%, 46%);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: hsl(208, 7%, 46%);
+            background-color: var(--seashell);
+        }
+
+        button { 
+            cursor: pointer; 
+        }
+
+        .form-control, select {
+            background-color: var(--white);
+            padding: 10px;
+            margin-block-end: 5px;
+            outline: none;
+            border: 2px solid transparent;
+            border-radius: 5px;
+            font-size: 16px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .form-control:focus, select:focus {
+            border-color: var(--old-rose);
+            box-shadow: 0 0 5px rgba(200, 80, 80, 0.5);
+        }
+
+        .payment-form {
+            background-color: var(--seashell);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            display: grid;
+            gap: 20px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn-primary {
+            background-color: var(--old-rose);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--chinese-violet);
+        }
+
+        .section-title {
+            font-family: 'Philosopher', sans-serif;
+            text-transform: uppercase;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 10px;
+            color: hsl(203, 30%, 26%);
+        }
+
+        .error-message {
+            color: #a33d3d;
+            font-size: 13px;
+            display: none;
+        }
+
+        .card-body {
+            background-color: var(--seashell);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        select {
+            appearance: none;
+            background-position: right 10px center;
+            background-size: 12px;
+            padding-right: 30px;
+        }
+
+        select option {
+            background: var(--seashell);
+            color: var(--chinese-violet);
+            padding: 10px;
+        }
+
+        select option:hover {
+            background: var(--old-rose);
+            color: var(--white);
+        }
+
+        select::-ms-expand {
+            display: none;
+        }
+    </style>
+</head>
+
+<body class="d-flex align-items-center justify-content-center vh-100 bg-light">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h2 class="section-title">Credit Card Payment</h2>
+                        <p class="text-center text-muted">Complete your payment securely</p>
+
+                        <!-- Order Summary -->
+                        <div class="bg-light p-3 rounded mb-4">
+                            <p><strong>Order:</strong> Things I Never Said</p>
+                            <p><strong>Quantity:</strong> <span id="quantity">1</span></p>
+                            <p><strong>Total Amount:</strong> <span id="totalAmount">Rp 225.000</span></p>
+                        </div>
+
+                        <!-- Payment Form -->
+                        <form id="creditCardForm">
+                            <div class="mb-3">
+                                <label for="cardNumber" class="form-label">Card Number</label>
+                                <input type="text" id="cardNumber" class="form-control" placeholder="XXXX XXXX XXXX XXXX" required>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="expiryDate" class="form-label">Expiry Date</label>
+                                    <input type="text" id="expiryDate" class="form-control" placeholder="MM/YY" required>
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+                                    <label for="cvv" class="form-label">CVV</label>
+                                    <input type="text" id="cvv" class="form-control" placeholder="XXX" required>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" id="payButton">Pay Rp 225.000</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies (Popper.js and jQuery) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const total = urlParams.get("total") || "225000"; 
+
+            document.getElementById("totalAmount").innerText = `Rp ${total}`;
+            document.getElementById("payButton").innerText = `Pay Rp ${total}`;
+
+            document.getElementById("creditCardForm").addEventListener("submit", function(event) {
+                event.preventDefault();
+                alert(`Payment of Rp ${total} Successful! Redirecting to homepage...`);
+                setTimeout(() => {
+                    window.location.href = "index.html";
+                }, 2000);
+            });
+        });
+    </script>
+</body>
+</html>
